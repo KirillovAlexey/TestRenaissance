@@ -25,7 +25,7 @@ public class BaseStep {
         driver.get(MyProperties.getInstance().getProperty("url"));
     }
 
-    //@After
+    @After
     public static void tearDown() {
         getDriver().quit();
     }

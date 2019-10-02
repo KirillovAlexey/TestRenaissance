@@ -1,5 +1,6 @@
 package Pages;
 
+import io.qameta.allure.Step;
 import steps.BaseStep;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,6 +13,7 @@ public class MainPage extends BasePage {
 
     WebDriver driver = BaseStep.getDriver();
 
+    @Step("Открытие вклада в банке")
     public void openDepositPage() {
         WebDriverWait wait = new WebDriverWait(driver, 10, 750);
         deposit.click();
